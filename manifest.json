@@ -1,7 +1,7 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 4,
     "name": "AITOXX",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "Capture AI chat content to Flomo notes.",
     "permissions": [
         "storage",
