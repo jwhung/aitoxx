@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITOXX</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AITOXX</h1>
+            <p>Capture your insights</p>
+        </header>
+
+        <div class="form-group">
+            <label for="apiUrl">Flomo API 地址</label>
+            <input type="url" id="apiUrl" placeholder="https://flomoapp.com/iwh/..." required>
+        </div>
+
+        <div class="form-group">
+            <label for="tags">标签(保存笔记时自动添加)</label>
+            <input type="text" id="tags" placeholder="#AI #Research">
+            <small>Separated by space or comma</small>
+        </div>
+
+        <button id="saveBtn">保存设置</button>
+
+        <div id="status" class="status"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/* Button styles */
+.flomo-save-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    margin-left: 8px;
+    margin-top: 4px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 9999;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+.flomo-save-btn:hover {
+    background-color: #00dbb5;
+    color: white;
+    border-color: #00dbb5;
+}
+
+.flomo-save-btn.saving {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.flomo-save-btn.success {
+    background-color: #00dbb5;
+    color: white;
+    border-color: #00dbb5;
+}
+
+.flomo-save-btn.error {
+    background-color: #ff4d4d;
+    color: white;
+    border-color: #ff4d4d;
+}
+
+/* Dark mode adjustments if needed, though usually transparent bg works ok */
+@media (prefers-color-scheme: dark) {
+    .flomo-save-btn {
+        border-color: #444;
+        color: #aaa;
+    }
+}
